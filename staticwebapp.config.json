@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "allowedRoles": ["site_viewers"]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "rewrite": "/401.html",
+      "statusCode": 200
+    }
+  },
+  "auth": {
+    "roles": {
+      "site_viewers": {
+        "groups": ["e038c6bb-28f6-4d1a-a9e2-53cdedc0c9c6"]
+      }
+    }
+  }
+}
